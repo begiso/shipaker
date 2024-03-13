@@ -185,6 +185,7 @@ section {
 .header_subtitle {
   margin-top: 15px;
   font-size: 20px;
+  line-height: 140%;
 }
 
 .btn {
@@ -659,7 +660,7 @@ section {
   }
 }
 
-/* About Page start */
+/* Articles Page start */
 
 .breadcrumb {
   display: flex;
@@ -668,7 +669,8 @@ section {
   margin-top: 20px;
 }
 
-.breadcrumb-link a {
+.breadcrumb-link a,
+.breadcrumb-link {
   font-size: 16px;
   margin-left: 4px;
   text-decoration: none;
@@ -715,7 +717,7 @@ section {
   margin-right: 5px;
 }
 
-/* About page Articles */
+/* Articles page Articles */
 
 .about-articles-grid {
   display: grid;
@@ -789,24 +791,30 @@ section {
   border: none;
 }
 
-/* About page adaptive */
+/* Articles page adaptive */
 
 @media screen and (max-width: 875px) {
   .about-articles-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
 }
 
-
 @media screen and (max-width: 675px) {
+  .articles-header {
+    margin: 20px 0;
+  }
+
+  .articles-header .header_subtitle {
+    display: none;
+  }
+
   .about-articles-grid {
     grid-template-columns: repeat(2, 2fr);
     gap: 10px;
   }
   .btn-outline {
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 5px 10px;
   }
 
   .sort_text {
@@ -815,5 +823,13 @@ section {
   .sort-select {
     font-size: 14px;
   }
-}
 
+  .breadcrumb {
+    margin-top: 10px;
+  }
+
+  .breadcrumb-link a,
+  .breadcrumb-link {
+    font-size: 12px;
+  }
+}
