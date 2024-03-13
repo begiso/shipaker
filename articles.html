@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Shipaker.uz</title>
+    <title>Мақалалар</title>
   </head>
   <body>
-    
     <!-- Navbar -->
 
     <nav class="nav">
@@ -41,8 +40,10 @@
           <div class="nav_right">
             <div class="change_lang">
               <img src="img/flag_kaa.svg" alt="Flag_Kar" />
-              <a href="#">Қар</a>
-              <img src="img/arrow.svg.svg" alt="arrow" />
+              <select name="language" class="lang-select">
+                <option value="value1 selected">Қар</option>
+                <option value="value1 selected">Қар</option>
+              </select>
             </div>
             <div class="search">
               <form action="#" class="search_form">
@@ -62,159 +63,102 @@
       </div>
     </nav>
 
+    <!-- BreadCrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-link"><a href="index.html">Бас бөлим</a></li>
+          <li class="breadcrumb-link breadcrumb-link-active">Мақалалар</li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Header -->
 
     <header class="header">
       <div class="container">
         <div class="header_inner">
-          <div class="header_left">
-            <h1 class="header_title">«Шыпакер» газетасының рәсмий порталы</h1>
+          <div class="header_left header_left-about">
+            <h1 class="header_title">Мақалалар</h1>
             <p class="header_subtitle">
-              Саламат турмыс тәризи ҳаққында пайдалы мақалалар
+              Заботьтесь о своем здоровье: правильное питание, физическая
+              активность, полноценный сон. Управляйте стрессом, проходите
+              регулярные медицинские осмотры. Сплоченные отношения и забота —
+              ключи к долгой, счастливой жизни.
             </p>
-            <button class="btn header_btn">Толық мағлыўмат</button>
+            <button class="btn-outline about-page-btn">Профилактика</button>
+            <button class="btn-outline about-page-btn">Кеселликлер</button>
+            <button class="btn-outline about-page-btn">Психология</button>
+            <button class="btn-outline about-page-btn">Руўхыйлық</button>
+            <button class="btn-outline about-page-btn">
+              Саламат турмыс тәризи
+            </button>
+            <button class="btn-outline about-page-btn">Ана ҳам бала</button>
           </div>
           <div class="header_right">
-            <img src="img/header_photo.png" alt="Photo" />
+            <img src="img/about-page/about-page-header.png" alt="Photo" />
           </div>
         </div>
       </div>
     </header>
 
     <!-- Articles -->
-
-    <section class="articles">
+    <section class="about-articles">
       <div class="container">
-        <div class="articles_inner">
-          <div class="articles_left">
-            <h2 class="title articles_title">Ақырғы қосылған мақалалар</h2>
-            <div class="article-h">
-              <div class="article-h__left">
-                <img src="img/image.jpg" alt="Image" />
-              </div>
-              <div class="article-h_right">
-                <div class="article-category">Профилактика</div>
-                <h3 class="article-title">
-                  Способы профилактики сердечно-сосудистых заболеваний
-                </h3>
-                <div class="article-description">
-                  <div class="article-date">
-                    <img src="img/date.svg" alt="date" />
-                    02-03-2024
-                  </div>
-                  <div class="line"></div>
-                  <span class="author">Автор</span>
-                </div>
-                <p class="article-text">
-                  Сердечно-сосудистые заболевания — одна из главных проблем,
-                  касающихся человеческого здоровья. Эти заболевания могут
-                  включать в себя инфаркт, инсульт, артериальную гипертензию,
-                  аритмию и многие другие состояния, которые затрагивают сердце
-                  и кровеносную систему.
-                </p>
-              </div>
+        <div class="sort">
+          <div class="sort_text">Тақлаў:</div>
+          <select name="sort-select" class="sort-select" id="sort-select">
+            <option value="value1" selected>Оқылыўлар саны бойынша</option>
+            <option value="value2">Оқылыўлар саны бойынша</option>
+            <option value="value3">Оқылыўлар саны бойынша</option>
+          </select>
+        </div>
+        <div class="about-articles-grid">
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
             </div>
-            <div class="article-h">
-              <div class="article-h__left">
-                <img src="img/image.jpg" alt="Image" />
-              </div>
-              <div class="article-h_right">
-                <div class="article-category">Профилактика</div>
-                <h3 class="article-title">
-                  Способы профилактики сердечно-сосудистых заболеваний
-                </h3>
-                <div class="article-description">
-                  <div class="article-date">
-                    <img src="img/date.svg" alt="date" />
-                    02-03-2024
-                  </div>
-                  <div class="line"></div>
-                  <span class="author">Автор</span>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
                 </div>
-                <p class="article-text">
-                  Сердечно-сосудистые заболевания — одна из главных проблем,
-                  касающихся человеческого здоровья. Эти заболевания могут
-                  включать в себя инфаркт, инсульт, артериальную гипертензию,
-                  аритмию и многие другие состояния, которые затрагивают сердце
-                  и кровеносную систему.
-                </p>
+                <div class="line"></div>
+                <span class="author">Автор</span>
               </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
             </div>
-            <div class="article-h">
-              <div class="article-h__left">
-                <img src="img/image.jpg" alt="Image" />
-              </div>
-              <div class="article-h_right">
-                <div class="article-category">Профилактика</div>
-                <h3 class="article-title">
-                  Способы профилактики сердечно-сосудистых заболеваний
-                </h3>
-                <div class="article-description">
-                  <div class="article-date">
-                    <img src="img/date.svg" alt="date" />
-                    02-03-2024
-                  </div>
-                  <div class="line"></div>
-                  <span class="author">Автор</span>
-                </div>
-                <p class="article-text">
-                  Сердечно-сосудистые заболевания — одна из главных проблем,
-                  касающихся человеческого здоровья. Эти заболевания могут
-                  включать в себя инфаркт, инсульт, артериальную гипертензию,
-                  аритмию и многие другие состояния, которые затрагивают сердце
-                  и кровеносную систему.
-                </p>
-              </div>
-            </div>
-            <div class="article-h">
-              <div class="article-h__left">
-                <img src="img/image.jpg" alt="Image" />
-              </div>
-              <div class="article-h_right">
-                <div class="article-category">Профилактика</div>
-                <h3 class="article-title">
-                  Способы профилактики сердечно-сосудистых заболеваний
-                </h3>
-                <div class="article-description">
-                  <div class="article-date">
-                    <img src="img/date.svg" alt="date" />
-                    02-03-2024
-                  </div>
-                  <div class="line"></div>
-                  <span class="author">Автор</span>
-                </div>
-                <p class="article-text">
-                  Сердечно-сосудистые заболевания — одна из главных проблем,
-                  касающихся человеческого здоровья. Эти заболевания могут
-                  включать в себя инфаркт, инсульт, артериальную гипертензию,
-                  аритмию и многие другие состояния, которые затрагивают сердце
-                  и кровеносную систему.
-                </p>
-              </div>
-            </div>
-            <button class="btn to-articles-btn">
-              Мақалалар бөлимине өтиў
-              <img src="img/arrow-btn.svg" alt="Arrow-btn" />
-            </button>
           </div>
-          <div class="articles_right">
-            <h2 class="title top_articles_title">Ең көп оқылғанлар</h2>
-            <div class="top-article">
-              <div class="article-category top-article-category">
-                Профилактика
-              </div>
-              <h3 class="article-title top-article-title">
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
                 Способы профилактики сердечно-сосудистых заболеваний
               </h3>
-              <div class="article-description top-article-description">
-                <div class="article-date top-article-date">
+              <div class="article-description">
+                <div class="article-date">
                   <img src="img/date.svg" alt="date" />
                   02-03-2024
                 </div>
                 <div class="line"></div>
                 <span class="author">Автор</span>
               </div>
-              <p class="article-text top-article-text">
+              <p class="article-text article-v-text">
                 Сердечно-сосудистые заболевания — одна из главных проблем,
                 касающихся человеческого здоровья. Эти заболевания могут
                 включать в себя инфаркт, инсульт, артериальную гипертензию,
@@ -222,22 +166,26 @@
                 кровеносную систему.
               </p>
             </div>
-            <div class="top-article">
-              <div class="article-category top-article-category">
-                Профилактика
-              </div>
-              <h3 class="article-title top-article-title">
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
                 Способы профилактики сердечно-сосудистых заболеваний
               </h3>
-              <div class="article-description top-article-description">
-                <div class="article-date top-article-date">
+              <div class="article-description">
+                <div class="article-date">
                   <img src="img/date.svg" alt="date" />
                   02-03-2024
                 </div>
                 <div class="line"></div>
                 <span class="author">Автор</span>
               </div>
-              <p class="article-text top-article-text">
+              <p class="article-text article-v-text">
                 Сердечно-сосудистые заболевания — одна из главных проблем,
                 касающихся человеческого здоровья. Эти заболевания могут
                 включать в себя инфаркт, инсульт, артериальную гипертензию,
@@ -245,22 +193,26 @@
                 кровеносную систему.
               </p>
             </div>
-            <div class="top-article">
-              <div class="article-category top-article-category">
-                Профилактика
-              </div>
-              <h3 class="article-title top-article-title">
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
                 Способы профилактики сердечно-сосудистых заболеваний
               </h3>
-              <div class="article-description top-article-description">
-                <div class="article-date top-article-date">
+              <div class="article-description">
+                <div class="article-date">
                   <img src="img/date.svg" alt="date" />
                   02-03-2024
                 </div>
                 <div class="line"></div>
                 <span class="author">Автор</span>
               </div>
-              <p class="article-text top-article-text">
+              <p class="article-text article-v-text">
                 Сердечно-сосудистые заболевания — одна из главных проблем,
                 касающихся человеческого здоровья. Эти заболевания могут
                 включать в себя инфаркт, инсульт, артериальную гипертензию,
@@ -268,149 +220,236 @@
                 кровеносную систему.
               </p>
             </div>
-            <h2 class="title categories-title">Категориялар</h2>
-            <div class="categories">
-              <div class="category-item">Профилактика</div>
-              <div class="category-item">Кеселликлер</div>
-              <div class="category-item">Психология</div>
-              <div class="category-item">Руўхыйлық</div>
-              <div class="category-item">Саламат турмыс тәризи</div>
-              <div class="category-item">Ана ҳам бала</div>
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
+                </div>
+                <div class="line"></div>
+                <span class="author">Автор</span>
+              </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
+                </div>
+                <div class="line"></div>
+                <span class="author">Автор</span>
+              </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
+                </div>
+                <div class="line"></div>
+                <span class="author">Автор</span>
+              </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
+                </div>
+                <div class="line"></div>
+                <span class="author">Автор</span>
+              </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
+                </div>
+                <div class="line"></div>
+                <span class="author">Автор</span>
+              </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
+                </div>
+                <div class="line"></div>
+                <span class="author">Автор</span>
+              </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
+                </div>
+                <div class="line"></div>
+                <span class="author">Автор</span>
+              </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-v">
+            <div class="article-v__img">
+              <img src="img/article-v-img.jpg" alt="Image" />
+            </div>
+            <div class="article-v_content">
+              <div class="article-category">Профилактика</div>
+              <h3 class="article-title article-v-title">
+                Способы профилактики сердечно-сосудистых заболеваний
+              </h3>
+              <div class="article-description">
+                <div class="article-date">
+                  <img src="img/date.svg" alt="date" />
+                  02-03-2024
+                </div>
+                <div class="line"></div>
+                <span class="author">Автор</span>
+              </div>
+              <p class="article-text article-v-text">
+                Сердечно-сосудистые заболевания — одна из главных проблем,
+                касающихся человеческого здоровья. Эти заболевания могут
+                включать в себя инфаркт, инсульт, артериальную гипертензию,
+                аритмию и многие другие состояния, которые затрагивают сердце и
+                кровеносную систему.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Recommend articles -->
-
-    <section class="rcmd-articles">
-      <div class="container">
-        <h2 class="title rcmd-categories-title">Усыныс етемиз</h2>
-        <div class="rcmd-articles-grid">
-          <div class="article-v">
-            <div class="article-v__img">
-              <img src="img/article-v-img.jpg" alt="Image" />
-            </div>
-            <div class="article-v_content">
-              <div class="article-category">Профилактика</div>
-              <h3 class="article-title article-v-title">
-                Способы профилактики сердечно-сосудистых заболеваний
-              </h3>
-              <div class="article-description">
-                <div class="article-date">
-                  <img src="img/date.svg" alt="date" />
-                  02-03-2024
-                </div>
-                <div class="line"></div>
-                <span class="author">Автор</span>
-              </div>
-              <p class="article-text article-v-text">
-                Сердечно-сосудистые заболевания — одна из главных проблем,
-                касающихся человеческого здоровья. Эти заболевания могут
-                включать в себя инфаркт, инсульт, артериальную гипертензию,
-                аритмию и многие другие состояния, которые затрагивают сердце и
-                кровеносную систему.
-              </p>
-            </div>
+        <div class="pagination">
+          <div class="page-arrow">
+            <img src="img/about-page/arrow-left.svg" alt="Arrow-left" />
           </div>
-          <div class="article-v">
-            <div class="article-v__img">
-              <img src="img/article-v-img.jpg" alt="Image" />
-            </div>
-            <div class="article-v_content">
-              <div class="article-category">Профилактика</div>
-              <h3 class="article-title article-v-title">
-                Способы профилактики сердечно-сосудистых заболеваний
-              </h3>
-              <div class="article-description">
-                <div class="article-date">
-                  <img src="img/date.svg" alt="date" />
-                  02-03-2024
-                </div>
-                <div class="line"></div>
-                <span class="author">Автор</span>
-              </div>
-              <p class="article-text article-v-text">
-                Сердечно-сосудистые заболевания — одна из главных проблем,
-                касающихся человеческого здоровья. Эти заболевания могут
-                включать в себя инфаркт, инсульт, артериальную гипертензию,
-                аритмию и многие другие состояния, которые затрагивают сердце и
-                кровеносную систему.
-              </p>
-            </div>
+          <ul class="pagination-ul">
+            <li class="pagination-item pagination-active">1</li>
+            <li class="pagination-item">2</li>
+            <li class="pagination-item">3</li>
+          </ul>
+          <div class="page-arrow pagination-active">
+            <img src="img/about-page/arrow-right.svg" alt="Arrow-right" />
           </div>
-          <div class="article-v">
-            <div class="article-v__img">
-              <img src="img/article-v-img.jpg" alt="Image" />
-            </div>
-            <div class="article-v_content">
-              <div class="article-category">Профилактика</div>
-              <h3 class="article-title article-v-title">
-                Способы профилактики сердечно-сосудистых заболеваний
-              </h3>
-              <div class="article-description">
-                <div class="article-date">
-                  <img src="img/date.svg" alt="date" />
-                  02-03-2024
-                </div>
-                <div class="line"></div>
-                <span class="author">Автор</span>
-              </div>
-              <p class="article-text article-v-text">
-                Сердечно-сосудистые заболевания — одна из главных проблем,
-                касающихся человеческого здоровья. Эти заболевания могут
-                включать в себя инфаркт, инсульт, артериальную гипертензию,
-                аритмию и многие другие состояния, которые затрагивают сердце и
-                кровеносную систему.
-              </p>
-            </div>
-          </div>
-          <div class="article-v">
-            <div class="article-v__img">
-              <img src="img/article-v-img.jpg" alt="Image" />
-            </div>
-            <div class="article-v_content">
-              <div class="article-category">Профилактика</div>
-              <h3 class="article-title article-v-title">
-                Способы профилактики сердечно-сосудистых заболеваний
-              </h3>
-              <div class="article-description">
-                <div class="article-date">
-                  <img src="img/date.svg" alt="date" />
-                  02-03-2024
-                </div>
-                <div class="line"></div>
-                <span class="author">Автор</span>
-              </div>
-              <p class="article-text article-v-text">
-                Сердечно-сосудистые заболевания — одна из главных проблем,
-                касающихся человеческого здоровья. Эти заболевания могут
-                включать в себя инфаркт, инсульт, артериальную гипертензию,
-                аритмию и многие другие состояния, которые затрагивают сердце и
-                кровеносную систему.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-
-    <section class="about">
-      <div class="container">
-        <h2 class="title about-title">Редакция ҳаққында</h2>
-        <p class="about-text">
-          «Шыпакер» газетасы журтымызда халық саламатлығы бағдарында 1998-жылдан
-          берли басылып киятырған бирден-бир газета. Газетаның
-          шөлкемлестириўшиси – Қарақалпақстан Республикасы Денсаўлықты сақлаў
-          министрлиги.
-        </p>
-        <button class="btn">Толық мағлыўмат</button>
-        <div class="about-images">
-          <img src="img/about1.jpg" alt="img1" class="about-img" />
-          <img src="img/about2.jpg" alt="img2" class="about-img" />
         </div>
       </div>
     </section>
@@ -422,7 +461,9 @@
         <div class="footer_up">
           <div class="logo">
             <img src="img/logo_white.svg" alt="Logo-white" />
-          </div>
+          </div>.sort {
+            font-size: ;
+          }
           <ul class="footer_links">
             <li><a href="#" class="footer_link">Мақалалар</a></li>
             <li><a href="#" class="footer_link">Медиа</a></li>

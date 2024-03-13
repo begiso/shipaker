@@ -108,11 +108,13 @@ section {
   align-items: center;
 }
 
-.change_lang a {
+.change_lang .lang-select {
   font-size: 16px;
   margin-left: 8px;
   text-decoration: none;
   color: var(--black-color);
+  border: none;
+  outline: none;
 }
 
 .search_form {
@@ -255,10 +257,10 @@ section {
   font-size: 24px;
   font-weight: 600;
   margin-top: 5px;
-  display: -webkit-box;
+  /* display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: hidden; */
 }
 .article-description {
   display: flex;
@@ -375,10 +377,10 @@ section {
 }
 
 .article-v-title {
-  display: -webkit-box;
+  /* display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: hidden; */
   font-size: 20px;
 }
 
@@ -491,6 +493,10 @@ section {
     flex-wrap: wrap;
   }
 
+  .article-v-title {
+    font-size: 16px;
+  }
+
   .rcmd-articles-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -531,6 +537,9 @@ section {
   }
   .top-article-title {
     font-size: 20px;
+  }
+  .article-v-title {
+    font-size: 16px;
   }
   .rcmd-articles-grid {
     grid-template-columns: repeat(2, 2fr);
@@ -616,7 +625,7 @@ section {
     border-radius: 10px;
   }
   .article-v {
-    padding: 10px;
+    padding: 10px 10px 20px;
     border-radius: 10px;
   }
   .article-v__img img {
@@ -645,4 +654,166 @@ section {
   .footer_up .logo {
     margin-bottom: 10px;
   }
+  .article-v-text {
+    display: none;
+  }
 }
+
+/* About Page start */
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.breadcrumb-link a {
+  font-size: 16px;
+  margin-left: 4px;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.breadcrumb-link-active {
+  color: #9c9c9c;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.breadcrumb-link-active::before {
+  content: url(../img/about-page/breadcrumb-icon.svg);
+  margin-right: 10px;
+}
+
+.header_left-about {
+  width: 80%;
+}
+
+.header_left-about .header_subtitle {
+  margin-bottom: 10px;
+}
+
+.btn-outline {
+  background-color: var(--bg-color);
+  padding: 16px 25px;
+  color: var(--main-color);
+  border-radius: 50px;
+  border: 1px solid var(--main-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-outline:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+.about-page-btn {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+/* About page Articles */
+
+.about-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 19px;
+  justify-content: flex-end;
+}
+
+.sort-text {
+  font-size: 16px;
+}
+
+.sort-select {
+  background: none;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  color: var(--main-color);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-ul {
+  list-style: none;
+  display: flex;
+}
+
+.page-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 38px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.page-arrow:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.pagination-item {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.pagination-active {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border: none;
+}
+
+/* About page adaptive */
+
+@media screen and (max-width: 875px) {
+  .about-articles-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+
+@media screen and (max-width: 675px) {
+  .about-articles-grid {
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+  }
+  .btn-outline {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .sort_text {
+    font-size: 14px;
+  }
+  .sort-select {
+    font-size: 14px;
+  }
+}
+
