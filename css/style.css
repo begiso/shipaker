@@ -68,6 +68,10 @@ section {
   align-items: center;
 }
 
+.logo img {
+  width: 100%;
+}
+
 .nav_links {
   display: flex;
   align-items: center;
@@ -537,11 +541,28 @@ section {
 }
 
 @media screen and (max-width: 675px) {
+  .article-category {
+    height: 20px;
+  }
+  .header_subtitle {
+    margin-top: 5px;
+  }
+  .header_btn {
+    margin-top: 15px;
+  }
+  .article-h {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
   .container {
     padding: 0 10px;
   }
-  .header_inner {
-    flex-wrap: wrap;
+  section {
+    padding-bottom: 20px;
+  }
+  .header_right {
+    display: none;
   }
   .header_title {
     font-size: 24px;
@@ -558,6 +579,9 @@ section {
   .top-article-title {
     font-size: 14px;
   }
+  .top-article-text {
+    display: none;
+  }
   .article-h_right .article-text {
     display: none;
   }
@@ -570,13 +594,55 @@ section {
     font-size: 12px;
   }
   .rcmd-articles-grid {
-    grid-template-columns: repeat(1, 4fr);
+    gap: 10px;
   }
   .article-h_right {
     margin-left: 10px;
   }
   .article-h__left {
-    max-width: 150px;
+    max-width: 140px;
   }
-  
+  .article-h__left img {
+    border-radius: 5px;
+  }
+  .top-article {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .category-item {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .article-v {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .article-v__img img {
+    border-radius: 10px;
+  }
+  .categories-title {
+    margin-bottom: 15px;
+  }
+  .article-v-title {
+    font-size: 14px;
+  }
+  .article-v_content {
+    margin-top: 5px;
+  }
+  .about-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .about-images img {
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .footer {
+    padding: 40px 0 40px;
+  }
+  .footer_up .logo {
+    margin-bottom: 10px;
+  }
 }
